@@ -3,7 +3,6 @@ package net.arenamod.arena;
 import net.arenamod.util.AttributeUtil;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.PillagerEntity;
@@ -146,7 +145,7 @@ public class WaveController {
     private static <T extends net.minecraft.entity.mob.MobEntity> T spawnMob(
             ServerWorld world, Arena arena, EntityType<T> type,
             double scale, double health, double dmgMultiplier, int offsetX, int offsetZ) {
-        T entity = type.create(world, SpawnReason.EVENT);
+        T entity = type.create(world);
         if (entity == null) return null;
         BlockPos p = arena.spawnPoint();
         entity.refreshPositionAndAngles(p.getX() + 0.5 + offsetX, p.getY(), p.getZ() + 0.5 + offsetZ, 0f, 0f);

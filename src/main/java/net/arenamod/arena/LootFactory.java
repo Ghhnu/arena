@@ -107,14 +107,14 @@ public class LootFactory {
                 new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 1, 9, false, true, true)
         );
         stack.set(DataComponentTypes.POTION_CONTENTS,
-                new PotionContentsComponent(java.util.Optional.empty(), java.util.Optional.of(0xFF5555), effects, java.util.Optional.empty()));
+                new PotionContentsComponent(java.util.Optional.empty(), java.util.Optional.of(0xFF5555), effects));
         stack.set(DataComponentTypes.CUSTOM_NAME, Text.literal("Poción de 100 Corazones").formatted(Formatting.RED));
         return stack;
     }
 
     private static void applyEnchantment(ServerWorld world, ItemStack stack, net.minecraft.registry.RegistryKey<Enchantment> key, int level) {
         RegistryEntry<Enchantment> entry = world.getRegistryManager()
-                .getOrThrow(RegistryKeys.ENCHANTMENT)
+                .get(RegistryKeys.ENCHANTMENT)
                 .getEntry(key)
                 .orElseThrow();
         stack.addEnchantment(entry, level);
