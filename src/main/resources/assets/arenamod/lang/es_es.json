@@ -1,0 +1,6 @@
+{
+  "arenamod.msg.created": "Arena '%s' creada en %s, %s, %s.",
+  "arenamod.msg.opened": "La arena '%s' está ahora ABIERTA. La puerta de barrotes de hierro se ha retirado.",
+  "arenamod.msg.closed": "La arena '%s' está ahora CERRADA. La puerta de barrotes de hierro se ha colocado.",
+  "arenamod.msg.notfound": "No se ha encontrado ninguna arena cerca."
+}

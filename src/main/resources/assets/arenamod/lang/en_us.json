@@ -1,0 +1,6 @@
+{
+  "arenamod.msg.created": "Arena '%s' created at %s, %s, %s.",
+  "arenamod.msg.opened": "Arena '%s' is now OPEN. The iron bars door has been removed.",
+  "arenamod.msg.closed": "Arena '%s' is now CLOSED. The iron bars door has been placed.",
+  "arenamod.msg.notfound": "No nearby arena was found."
+}

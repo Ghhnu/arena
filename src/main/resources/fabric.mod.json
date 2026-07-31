@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "arenamod",
+  "version": "${version}",
+  "name": "Arena Mod",
+  "description": "Crea arenas de combate por oleadas con /arena <x> <y> <z>.",
+  "authors": [ "Tú + Claude" ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.arenamod.ArenaMod"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
